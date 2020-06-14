@@ -1,6 +1,6 @@
 import { Directive, HostListener, Input } from '@angular/core';
 @Directive({
-  selector: "button[ngxPrint]"
+  selector: "button[ngxPrint],ion-button[ngxPrint]"
 })
 export class NgxPrintDirective {
 
@@ -110,7 +110,7 @@ public returnStyleValues() {
 
   /**
    * @returns html section to be printed along with some associated inputs
-   * 
+   *
    */
   private getHtmlContents() {
     let printContents = document.getElementById(this.printSectionId);
